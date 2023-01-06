@@ -1,0 +1,65 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body{
+    height:100vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    flex-direction: column;
+}
+h1{
+    margin-bottom:50px;
+    font-size:40px;
+    font-weight: 100;
+}
+
+section{
+    padding:20px;
+    background-color:rgb(55, 54, 54);
+    height:600px;
+    width:400px;
+    display:flex;
+}
+
+section>div{
+    display:flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+.strengther{
+    height:100%;
+    width:20px;
+    background-color:#fff;
+    margin-right: 20px;
+    position: relative;
+}
+.strengther::after{
+    /*strength-amount:15*/
+    content:"";
+    position: absolute;
+    background-color:green;
+    bottom:0;
+    width:100%;
+    height:calc(1% * var(--strength-amount,0));
+
+
+}
+
+input{
+    border:none;
+    height:30px;
+    width:300px;
+    padding:20px 10px;
+    font-size: 20px;
+    margin-bottom:30px;
+}
+
+.password-check p{
+    color:white;
+    margin:15px;
+    font-size: 15px;
+}

@@ -1,0 +1,153 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding:0;
+}
+
+body{
+    background-color:rgb(128, 168, 255);
+    color:#000;
+
+}
+
+.section-center{
+    width:90vw;
+    margin:0 auto;
+    max-width: 35rem;
+    margin-top:8rem;
+    background-color:rgb(255, 211, 135);
+    border-radius:0.5rem;
+    padding:2rem;
+}
+
+.section-center:hover{
+    box-shadow: 0 5px 15px rgba(0,0,0,0.4);
+}
+
+.alert{
+    height:1.25rem;
+    display:grid;
+    margin-bottom:1rem;
+    align-items:center;
+    text-align: center;
+    font-size: 0.9rem;
+    border-radius:0.25rem;
+}
+
+
+.alert-danger{
+    color:red;
+    background-color:rgb(253, 255, 185);
+}
+
+.alert-success{
+    color:green;
+    background-color:aliceblue;
+}
+
+.grocery-form h3{
+    color:rgb(65, 63, 63);
+    text-align: center;
+    margin-bottom:1.5rem;
+    font-size: 1.5rem;
+}
+
+.form-control{
+    display:flex;
+    justify-content: center;
+}
+
+#grocery{
+    padding:0.25rem;
+    padding-left:1rem;
+    border-color:transparent;
+    font-size: 1rem;
+    flex:1 0 auto;
+
+}
+
+.submit-btn{
+    border-color: transparent;
+    flex:0 0 5rem;
+    display:grid;
+    align-items: center;
+    padding:0.25rem;
+    letter-spacing: 2px;
+    cursor:pointer;
+    font-size: 0.85rem;
+    margin-left:0.2rem;
+}
+.submit-btn:hover{
+    background-color: #000;
+    color:#fff;
+}
+
+.grocery-container{
+    margin-top:2rem;
+    visibility:hidden;
+}
+
+.show-container{
+    visibility:visible;
+}
+
+.grocery-item{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom:0.5rem;
+    padding:0.25rem 1rem;
+    border-radius: 0.25rem;
+}
+
+.grocery-item:hover{
+    color:black;
+    background-color:antiquewhite;
+}
+
+.title{
+    margin-bottom: 0;
+    color:rgb(54, 54, 179);
+
+}
+
+.edit-btn,.delete-btn{
+
+    background-color:transparent;
+    border-color:transparent;
+    cursor:pointer;
+    font-size: 0.7rem;
+    margin:0 0.15rem;
+}
+.edit-btn{
+    color:rgb(105, 255, 85);
+}
+.edit-btn:hover{
+    color:rgb(13, 103, 13);
+}
+
+.delete-btn{
+    color:crimson;
+}
+.delete-btn:hover{
+    color:rgb(97, 30, 30);
+}
+
+.clear-btn{
+    display:grid;
+    align-items:center;
+    width:10rem;
+    height:1.5rem;
+    background:transparent;
+    border-color:transparent;
+    color:rgb(255, 0, 179);
+    margin:0 auto;
+    font-size: 1rem;
+    letter-spacing: 2px;
+    cursor:pointer;
+    margin-top:1.25rem;
+}
+
+.clear-btn:hover{
+color:red;
+}

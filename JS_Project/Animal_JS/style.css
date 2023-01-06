@@ -1,0 +1,45 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body{
+    min-height: 100vh;
+    display:flex;
+    flex-direction: column;
+}
+
+section{
+    display: flex;
+}
+
+.cat,.fox,.dog{
+    height:90vh;
+    width:33vw;
+    background-color:grey;
+    margin-right:5px;
+
+}
+.cat img,.dog img,.fox img{
+    height:100%;
+    width:100%;
+    object-fit: cover;
+}
+.get-animals{
+    display:flex;
+    justify-content: space-around;
+
+}
+button{
+    padding:10px 20px;
+    background:none;
+    border:2px solid dodgerblue;
+    margin-top:15px;
+    cursor:pointer;
+}
+
+button:hover{
+    background-color:coral;
+    color:white;
+}

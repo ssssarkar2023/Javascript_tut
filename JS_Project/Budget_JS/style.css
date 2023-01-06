@@ -1,0 +1,168 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body{
+    min-height:100vh;
+    background-image:url("https://images.pexels.com/photos/45112/pexels-photo-45112.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: bottom;
+    display:flex;
+    align-items:center;
+    flex-direction: column;
+}
+
+h1{
+    font-size:60px;
+    font-weight: 700;
+    margin-bottom:30px;
+    text-align:center;
+    color:green;
+}
+.budget-container{
+    height:700px;
+    width:1500px;
+    padding:20px;
+    /* background-color:rgba(99,119,117,0.5); */
+}
+.budget-header{
+    display:flex;
+    flex-direction: column;
+}
+
+.balance{
+    display:flex;
+    align-self:center;
+    margin-bottom:30px;
+}
+.balance .value p{
+    font-size: 40px;
+    color:rgb(0, 0, 0);
+}
+
+.balance p,
+.account p{
+    font-size: 20px;
+    display:inline-block;
+}
+.account{
+    display:grid;
+    grid-template-columns: repeat(3,1fr);
+    justify-items:center;
+}
+.income .title,
+.income p{
+    color:rgb(76, 171, 53);
+}
+.outcome .title,
+.outcome p{
+    color:crimson;
+}
+.budget-dashboard{
+    margin-top:30px;
+    display:flex;
+    justify-content:space-around;
+}
+
+.income,.expense,#all{
+    width:30%;
+}
+
+h3{
+    font-size: 20px;
+    margin-bottom:15px;
+    cursor:pointer;
+    opacity:0.6;
+    background-color:rgba(0,0,0,0.8);
+    color:white;
+    padding:7px;
+    text-align:center;
+}
+
+#income-tracker,
+#expense-tracker{
+    display:flex;
+    flex-direction: column;
+    justify-content:space-between;
+}
+
+#income-tracker .input,
+#expense-tracker .input{
+    display:flex;
+    flex-direction: column;
+}
+
+#income-tracker .input div,
+#expense-tracker .input div{
+    display:flex;
+}
+
+#income-tracker .input div input:first-child,
+#expense-tracker .input div input:first-child{
+    margin-right:5px;
+}
+
+#income-tracker input,
+#expense-tracker input{
+    border:none;
+    padding:10px 15px;
+    font-size:15px;
+    margin-bottom: 5px;
+    width:50%;
+}
+
+input[type="submit"]
+{
+    width:100% !important;
+    font-size: 20px !important;
+    background-color: rgba(0,0,0,0.6);
+    color:white !important;
+    cursor:pointer;
+}
+.active{
+    opacity: 1;
+}
+.hide{
+    visibility: hidden;
+}
+.list{
+    padding:10px;
+    height:250px;
+    background-color:rgba(0,0,0,0.67);
+}
+
+#income-tracker .list{
+    color:rgb(37, 255, 48);
+}
+#expense-tracker .list{
+    color:crimson;
+}
+#all .list{
+    height:330px;
+    background-color:rgba(0,0,0,0.6);
+}
+#all .list li.income{
+    color: rgb(37, 255, 48);
+}
+#all .list li.expense {
+    color: crimson;
+}
+#all .list li i.fa-edit{
+    display:none;
+}
+.list li{
+    width:100%;
+    font-size: 15px;
+    display:flex;
+    justify-content:space-between;
+    border-bottom:2px solid white;
+    margin-bottom:15px;
+    padding:5px;
+}
+.list li i{
+    cursor:pointer;
+    font-size: 20px;
+}

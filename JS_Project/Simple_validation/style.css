@@ -1,0 +1,35 @@
+body{
+    background-image:linear-gradient(to top,coral 0%,yellow 100%);
+    background-attachment: fixed;
+}
+.col-md-5{
+    margin-top:150px;
+    padding:20px;
+}
+
+input{
+    margin-top:10px;
+}
+button{
+    margin-top:10px;
+}
+.cnt{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.success{
+    border:3px solid green;
+}
+
+.error{
+    border:3px solid red;
+}
+
+small{
+    color:crimson;
+    font-weight: bold;
+    margin:5px;
+    text-align: center;
+}

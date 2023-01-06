@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Med App</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="validation validate-success">Medicine Added</div>
+
+    <div class="validation validate-error">
+      Unable to Add Medicine <br />
+      Please Fill Out All Form Inputs
+    </div>
+
+    <h1>Med App</h1>
+
+    <div class="wrapper">
+      <!--Med Entry-->
+      <div class="med-entry">
+        <form class="med-form">
+          <!--Med Name-->
+          <div class="med-name">
+            <label for="name">Med Name</label>
+            <input type="text" id="name" />
+          </div>
+          <!--Med Code-->
+          <div class="med-code">
+            <label for="code">Med Code</label>
+            <input type="text" id="code" />
+          </div>
+
+          <!--Med Qty-->
+          <div class="med-qty">
+            <label for="qty">Med Qty</label>
+            <input type="text" id="qty" />
+          </div>
+
+          <!--Submit Button-->
+          <button class="add-med">Add Med</button>
+        </form>
+      </div>
+
+      <!--Med List-->
+      <div class="med-list">
+        <!--Header-->
+        <div class="med-list-header">
+          <h2>Name</h2>
+          <h2>Code</h2>
+          <h2>Qty</h2>
+          <h2></h2>
+        </div>
+
+        <!--Data-->
+        <div class="med-list-data"></div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
